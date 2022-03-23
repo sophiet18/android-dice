@@ -22,16 +22,26 @@ class MainActivity : AppCompatActivity() {
     private fun rollDice() {
 //    create new dice with 6 sides and roll it
         val dice = Dice(6)
-        val diceRoll = dice.roll()
+        val bigDice = bigDice(30)
+        val diceRoll = dice.smollRoll()
+        val bigDiceRoll = bigDice.bigRoll()
 //    update screen with dice roll
-        val resultTextView: TextView = findViewById(R.id.textview)
+        val resultTextView: TextView = findViewById(R.id.diceOne)
+        val resultViewTwo: TextView = findViewById(R.id.diceTwo)
         resultTextView.text = diceRoll.toString()
+        resultViewTwo.text = bigDiceRoll.toString()
     }
 }
 
 class Dice(val numSides: Int) {
     //   if numSides was a private val, it would only be accessible in the dice class
-    fun roll(): Int {
+    fun smollRoll(): Int {
         return (1..numSides).random()
+    }
+}
+
+class bigDice (val bigSides: Int){
+    fun bigRoll():Int{
+      return (1..bigSides).random()
     }
 }
