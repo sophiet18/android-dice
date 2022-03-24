@@ -13,5 +13,6 @@ finally understood what **functions and arguments** meant and so proud that I no
 
 
 **mar 24 🎂**
+
 woot woot! Learnt about adding conditionals to the dice AND most importantly I solved the SSL connection issue that's been bugging me for so long! 
 Learnt about if-else conditions and when statements. I think the latter would be more commonly used for good coding practices and keeping the console efficacious 
