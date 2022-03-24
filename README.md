@@ -1,4 +1,7 @@
 # 🎲
+
+**mar 23**
+
 yay me! This time I first created one dice following along the tutorial.
 I learnt that **private** means something is only accessible in that class,
 
