@@ -1,10 +1,10 @@
-package com.example.newdice
+package com.example.androiddice
 
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.newdice.R
 
 // the main activity class allows users to roll a dice and view the results
 class MainActivity : AppCompatActivity() {

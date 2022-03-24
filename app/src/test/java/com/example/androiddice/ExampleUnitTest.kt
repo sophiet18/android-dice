@@ -1,4 +1,4 @@
-package com.example.newdice
+package com.example.androiddice
 
 import org.junit.Test
 

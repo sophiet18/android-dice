@@ -1,4 +1,4 @@
-package com.example.newdice
+package com.example.androiddice
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
