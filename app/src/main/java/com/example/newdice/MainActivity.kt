@@ -17,6 +17,9 @@ class MainActivity : AppCompatActivity() {
         rollButton.setOnClickListener {
             rollDice()
         }
+
+        // Do a dice roll when app starts
+        rollDice()
     }
 
     //this function allows users to roll the dice and update the screen with the result
@@ -24,6 +27,7 @@ class MainActivity : AppCompatActivity() {
 //    create new dice with 6 sides and roll it
         val dice = Dice(6)
         val diceRoll = dice.roll()
+        // find the imageview in the layout aka the frame that holds the actual image and then codes in the when statements determine the actual image that goes inside
         val diceImage: ImageView = findViewById(R.id.imageView2)
         //    update screen with dice roll
         val drawableResource = when (diceRoll) {
@@ -34,6 +38,7 @@ class MainActivity : AppCompatActivity() {
             5 -> R.drawable.dice_5
             else -> R.drawable.dice_6
         }
+        // update the image with the correct drawable resource ID
         diceImage.setImageResource(drawableResource)
 //        add content description so that screen readers can read results
         diceImage.contentDescription = diceRoll.toString()
