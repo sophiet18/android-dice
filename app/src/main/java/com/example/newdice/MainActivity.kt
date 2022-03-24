@@ -2,6 +2,7 @@ package com.example.newdice
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -22,26 +23,16 @@ class MainActivity : AppCompatActivity() {
     private fun rollDice() {
 //    create new dice with 6 sides and roll it
         val dice = Dice(6)
-        val bigDice = bigDice(30)
-        val diceRoll = dice.smollRoll()
-        val bigDiceRoll = bigDice.bigRoll()
-//    update screen with dice roll
-        val resultTextView: TextView = findViewById(R.id.diceOne)
-        val resultViewTwo: TextView = findViewById(R.id.diceTwo)
-        resultTextView.text = diceRoll.toString()
-        resultViewTwo.text = bigDiceRoll.toString()
-    }
+        //    update screen with dice roll
+        val diceImage: ImageView = findViewById(R.id.imageView2)
+        diceImage.setImageResource(R.drawable.dice_2)
+
+            }
 }
 
 class Dice(val numSides: Int) {
     //   if numSides was a private val, it would only be accessible in the dice class
     fun smollRoll(): Int {
         return (1..numSides).random()
-    }
-}
-
-class bigDice (val bigSides: Int){
-    fun bigRoll():Int{
-      return (1..bigSides).random()
     }
 }
